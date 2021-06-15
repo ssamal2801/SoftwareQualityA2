@@ -13,9 +13,9 @@ namespace SoftwareQualityA2
             Console.WriteLine("Please select a correct option from the menu: ");
             Console.WriteLine("Menu");
             Console.WriteLine("1) Get Rectangle Length");
-            Console.WriteLine("2) Get Rectangle Width");
-            Console.WriteLine("3) Change Rectangle Width");
-            Console.WriteLine("4) Get Rectangle Length");
+            Console.WriteLine("2) Change Rectangle Width");
+            Console.WriteLine("3) Get Rectangle Width");
+            Console.WriteLine("4) Change Rectangle Length");
             Console.WriteLine("5) Get Rectangle Perimeter");
             Console.WriteLine("6) Get Rectangle Area");
             Console.WriteLine("7) Exit \n");

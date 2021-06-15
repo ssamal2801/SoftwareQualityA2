@@ -1,25 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SoftwareQualityA2
 {
     public class Rectangle
     {
-        private int rectLength;
-        private int rectWidth;
+
+        private int rectLength, rectWidth;
 
         public Rectangle()
         {
-            rectLength = 1;
-            rectWidth = 1;
+            rectLength = 5;
+            rectWidth = 5;
         }
 
         public Rectangle(int length, int width)
         {
-         this.rectLength = length;
+            if (length < 1)
+            {
+                throw new ArithmeticException();
+            }
+            if (width < 1)
+            {
+                throw new ArithmeticException();
+            }
+
+            this.rectLength = length;
          this.rectWidth = width;
         }
 
@@ -30,8 +35,11 @@ namespace SoftwareQualityA2
 
         public int SetLength(int length)
         {
-          this.rectLength = length;
-          return this.rectLength;
+            if(length>0)
+            {
+                this.rectLength = length;
+            }
+            return this.rectLength;
         }
 
         public int GetWidth()
@@ -41,7 +49,10 @@ namespace SoftwareQualityA2
 
         public int SetWidth(int width)
         {
-          this.rectWidth = width;
+            if (width > 0)
+            {
+               this.rectWidth = width;
+            }
           return this.rectWidth;
         }
 
